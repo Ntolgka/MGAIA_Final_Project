@@ -225,3 +225,4 @@ Clips/
 .venv/
 NoNeed/
 Report/
+.DS_Store
