@@ -29,10 +29,11 @@ python3 scripts/build_dataset.py
 # 6. Run analysis + plotting
 python3 scripts/analyze_stress.py
 python3 scripts/plot_results.py
+```
 
 ## Project Structure
 
-```
+```bash
 Final_Project/
 ├── Clips/                  # IVL match clips
 ├── cnn/
