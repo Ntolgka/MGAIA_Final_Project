@@ -24,7 +24,7 @@ from config import (PORTRAIT_REGIONS, CNN_IMG_HEIGHT, CNN_IMG_WIDTH,
                     CNN_CLASS_NAMES, STATUS_LABELS)
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MODEL_PATH = os.path.join(PROJECT_ROOT, "cnn", "outputs", "best_avatar_model.h5")
+MODEL_PATH = os.path.join(PROJECT_ROOT, "cnn", "outputs", "best_avatar_model.keras")
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "processed", "survivor_status")
 
 
@@ -37,7 +37,7 @@ def load_model():
     if not os.path.exists(MODEL_PATH):
         sys.exit(f"Model not found at {MODEL_PATH}. Run cnn/train_cnn.py first.")
 
-    model = tf.keras.models.load_model(MODEL_PATH)
+    model = tf.keras.models.load_model(MODEL_PATH, compile=False)
     return model
 
 
