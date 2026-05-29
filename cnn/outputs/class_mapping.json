@@ -1,0 +1,9 @@
+{
+  "0_healthy": 0,
+  "1_injured": 1,
+  "2_downed": 2,
+  "3_ballooned": 3,
+  "4_chaired": 4,
+  "5_eliminated": 5,
+  "6_escaped": 6
+}

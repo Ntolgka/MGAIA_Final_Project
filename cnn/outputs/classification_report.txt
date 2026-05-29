@@ -1,0 +1,13 @@
+              precision    recall  f1-score   support
+
+   0_healthy       0.96      1.00      0.98        94
+   1_injured       1.00      1.00      1.00        22
+    2_downed       0.92      1.00      0.96        22
+ 3_ballooned       1.00      0.90      0.95        20
+   4_chaired       1.00      0.96      0.98        26
+5_eliminated       0.81      0.94      0.87        53
+   6_escaped       0.87      0.48      0.62        27
+
+    accuracy                           0.92       264
+   macro avg       0.94      0.90      0.91       264
+weighted avg       0.93      0.92      0.92       264
