@@ -1,0 +1,4 @@
+trial,seed,fold,is_valid,reasons,missing_train_labels,missing_val_labels,train_groups,val_groups
+0,42,1,True,,,,"v02,v06,v08,v09,v12,v14,v21,v22","v04,v05,v15,v17,v20"
+0,42,2,True,,,,"v04,v05,v12,v14,v15,v17,v20,v21","v02,v06,v08,v09,v22"
+0,42,3,True,,,0_healthy,"v02,v04,v05,v06,v08,v09,v15,v17,v20,v22","v12,v14,v21"

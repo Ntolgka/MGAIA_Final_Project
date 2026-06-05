@@ -1,0 +1,13 @@
+              precision    recall  f1-score   support
+
+   0_healthy     0.9687    0.9789    0.9738       474
+   1_injured     0.9262    0.9912    0.9576       114
+    2_downed     0.9912    0.9912    0.9912       113
+ 3_ballooned     0.9533    0.9808    0.9668       104
+   4_chaired     0.9919    0.9313    0.9606       131
+5_eliminated     1.0000    0.7715    0.8710       267
+   6_escaped     0.7090    0.9853    0.8246       136
+
+    accuracy                         0.9358      1339
+   macro avg     0.9343    0.9472    0.9351      1339
+weighted avg     0.9479    0.9358    0.9364      1339

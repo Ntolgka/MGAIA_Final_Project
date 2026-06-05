@@ -1,0 +1,18 @@
+{
+  "learning_rate": 0.0005,
+  "augmentation": "none",
+  "model_size": "current",
+  "label_smoothing": 0.05,
+  "experiment_name": "stage_model_size",
+  "config_name": "lr_0p0005__aug_none__model_current__ls_0p05",
+  "mean_val_accuracy": 0.9902108605698737,
+  "std_val_accuracy": 0.0070811180971472095,
+  "mean_val_macro_f1_present_classes": 0.9904681694695535,
+  "std_val_macro_f1_present_classes": 0.007162698304091886,
+  "mean_val_macro_f1_all_classes": 0.9429363362234345,
+  "std_val_macro_f1_all_classes": 0.07570401272872126,
+  "overall_pooled_accuracy": 0.9887976101568334,
+  "overall_pooled_macro_f1": 0.9886604807467414,
+  "median_best_epoch": 19,
+  "mean_best_epoch": 18.0
+}

@@ -1,0 +1,36 @@
+{
+  "clip_id": "61",
+  "total_frames": 183,
+  "panels": {
+    "0": {
+      "injured": 62,
+      "eliminated": 7,
+      "healthy": 3,
+      "escaped": 101,
+      "downed": 3,
+      "chaired": 7
+    },
+    "1": {
+      "injured": 39,
+      "eliminated": 144
+    },
+    "2": {
+      "healthy": 5,
+      "injured": 124,
+      "eliminated": 40,
+      "escaped": 14
+    },
+    "3": {
+      "healthy": 4,
+      "eliminated": 176,
+      "injured": 1,
+      "downed": 2
+    },
+    "4": {
+      "healthy": 147,
+      "escaped": 27,
+      "injured": 6,
+      "eliminated": 3
+    }
+  }
+}

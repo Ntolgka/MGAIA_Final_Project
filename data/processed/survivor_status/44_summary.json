@@ -1,0 +1,30 @@
+{
+  "clip_id": "044",
+  "total_frames": 175,
+  "panels": {
+    "0": {
+      "escaped": 22,
+      "healthy": 73,
+      "eliminated": 80
+    },
+    "1": {
+      "eliminated": 84,
+      "ballooned": 82,
+      "chaired": 9
+    },
+    "2": {
+      "eliminated": 143,
+      "ballooned": 7,
+      "escaped": 25
+    },
+    "3": {
+      "chaired": 173,
+      "ballooned": 2
+    },
+    "4": {
+      "chaired": 89,
+      "eliminated": 61,
+      "escaped": 25
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "learning_rate": 0.0005,
+  "augmentation": "mild",
+  "model_size": "current",
+  "label_smoothing": 0.05
+}

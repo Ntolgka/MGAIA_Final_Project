@@ -1,0 +1,25 @@
+{
+  "clip_id": "19",
+  "total_frames": 58,
+  "panels": {
+    "0": {
+      "eliminated": 58
+    },
+    "1": {
+      "eliminated": 58
+    },
+    "2": {
+      "eliminated": 45,
+      "injured": 13
+    },
+    "3": {
+      "injured": 55,
+      "eliminated": 3
+    },
+    "4": {
+      "healthy": 42,
+      "chaired": 10,
+      "eliminated": 6
+    }
+  }
+}

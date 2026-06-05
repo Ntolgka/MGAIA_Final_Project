@@ -1,0 +1,8 @@
+label,num_images,num_groups,groups
+0_healthy,474,3,"v05,v06,v09"
+1_injured,114,5,"v05,v06,v08,v12,v15"
+2_downed,113,10,"v02,v04,v05,v06,v08,v09,v14,v15,v17,v21"
+3_ballooned,104,10,"v02,v04,v05,v06,v08,v09,v14,v15,v17,v21"
+4_chaired,131,6,"v05,v06,v14,v15,v17,v21"
+5_eliminated,267,9,"v04,v05,v06,v08,v09,v12,v14,v15,v17"
+6_escaped,136,10,"v02,v05,v06,v09,v12,v15,v17,v20,v21,v22"
