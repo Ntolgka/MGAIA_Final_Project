@@ -53,9 +53,8 @@ Final_Project/
 │   ├── annotations/        # clip_metadata.csv (all clips, all fields populated)
 │   ├── processed/          # Extracted CSVs (HR, time, status) + master_dataset.csv
 │   └── raw/                # Frame extracts and crop debug images
-├── 023-044_Track.xlsx      # Source tracking spreadsheet
 ├── outputs/
-│   ├── figures/            # Report-ready plots (12 figures)
+│   ├── figures/            # Plots 
 │   ├── modeling/           # Output directory for advanced statistical models
 │   └── tables/             # Analysis results (JSON, CSV)
 ├── scripts/
