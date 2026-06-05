@@ -5,7 +5,8 @@
 Analysis of stress, performance, and balance in professional asymmetrical play using gameplay clips from the Identity V League (IVL) 2025 Autumn season.
 
 **Course**: Modern Game AI Algorithms, Leiden University, 2025–2026  
-**Author**: Ntolgka Nalmpant
+**Authors**: Naixin Wang (s4657128), Shuai Cao (s4851978),
+Zhou Tong (s4857456), and Ntolgka Nalmpant (s4953932)
 
 ## Quick Start
 
@@ -20,15 +21,23 @@ pip install -r requirements.txt
 # 3. Run the full pipeline on a single clip (test)
 python3 scripts/run_pipeline.py --clip Clips/023.mp4
 
-# 4. Run the full pipeline on all 22 clips (~60-90 min)
-python3 scripts/run_pipeline.py --all --fps 0.5
+# 4. Run the full pipeline on all 87 clips (~3-4 hours)
+python3.11 scripts/run_pipeline.py --all --fps 0.5
 
 # 5. Build the master dataset
-python3 scripts/build_dataset.py
+python3.11 scripts/build_dataset.py
 
-# 6. Run analysis + plotting
-python3 scripts/analyze_stress.py
-python3 scripts/plot_results.py
+# 6. Run baseline analysis + plotting
+python3.11 scripts/analyze_stress.py
+python3.11 scripts/plot_results.py
+
+# 7. Run advanced modeling
+python3.11 scripts/model_hr_explanation.py
+python3.11 scripts/model_pressure_balance.py
+python3.11 scripts/model_pressured_state_prediction.py
+python3.11 scripts/model_state_progression.py
+python3.11 scripts/model_stress_index.py
+python3.11 scripts/model_stress_state_phase.py
 ```
 
 ## Project Structure
@@ -47,6 +56,7 @@ Final_Project/
 ├── 023-044_Track.xlsx      # Source tracking spreadsheet
 ├── outputs/
 │   ├── figures/            # Report-ready plots (12 figures)
+│   ├── modeling/           # Output directory for advanced statistical models
 │   └── tables/             # Analysis results (JSON, CSV)
 ├── scripts/
 │   ├── config.py           # UI region coordinates + CNN config
@@ -57,7 +67,13 @@ Final_Project/
 │   ├── build_dataset.py    # Merge all data into master_dataset.csv
 │   ├── analyze_stress.py   # Statistical analysis + hypothesis testing
 │   ├── plot_results.py     # Generate all figures
-│   └── run_pipeline.py     # Master orchestrator
+│   ├── run_pipeline.py     # Master orchestrator
+│   ├── model_hr_explanation.py # OLS Regression
+│   ├── model_pressure_balance.py # Hunter vs Survivor balance
+│   ├── model_pressured_state_prediction.py # Logistic Regression predictions
+│   ├── model_state_progression.py # Status progression (healthy -> injured -> downed -> chaired)
+│   ├── model_stress_index.py # Normalized stress calculations
+│   └── model_stress_state_phase.py # Phase and state interaction models
 └── requirements.txt
 ```
 
@@ -74,15 +90,14 @@ Final_Project/
 
 | Metric | Value |
 |--------|-------|
-| Total data points | 21,369 |
-| Clips analyzed | 22 |
-| Mean HR | 132.3 bpm (σ=32.7) |
+| Total data points | 67,856 |
+| Clips analyzed | 87 |
+| Mean HR | 121.6 bpm (σ=35.7) |
 | HR range | 50–219 bpm |
-| Phase effect | Kruskal-Wallis H=40.9, p<0.001 |
-| Highest status HR | Downed: 145.0 bpm |
-| Lowest status HR | Escaped: 126.6 bpm |
-| Highest panel HR | P1 (Survivor 2): 145.3 bpm |
-| Match outcome | 10 hunter wins, 9 draws, 3 survivor wins |
+| Phase effect | Kruskal-Wallis H=96.7, p<0.001 |
+| Highest status HR | Chaired: 132.2 bpm |
+| Lowest status HR | Injured: 117.5 bpm |
+| Hunter vs Survivor | Hunter (+7.84 bpm higher average) |
 
 ## CNN Performance
 
@@ -103,4 +118,4 @@ Final_Project/
 - TensorFlow 2.21
 - EasyOCR 1.7 (with PyTorch backend)
 - OpenCV, NumPy, Pandas, Matplotlib, Seaborn, SciPy, scikit-learn
-- openpyxl (for reading Excel metadata)
+- statsmodels (for OLS regression analysis)
